@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp" />
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/btn_cerrar"
             android:layout_width="25dp"
             android:layout_height="25dp"
             app:srcCompat="@drawable/imagen_x"
@@ -44,6 +44,7 @@
             android:layout_gravity="center"
             android:text="Gestor de alarmas"
             android:backgroundTint="@color/rosado"
+            android:onClick="onClick"
             />
 
         <Space

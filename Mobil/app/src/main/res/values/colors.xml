@@ -8,5 +8,9 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="green_backgorund">#DEF6F4</color>
+    <color name="rosado">#DB7598</color>
+    <color name="naranja">#E66A32</color>
+    <color name="gris">#676464</color>
+    <color name="blanco">#FFFFFF</color>
 
 </resources>

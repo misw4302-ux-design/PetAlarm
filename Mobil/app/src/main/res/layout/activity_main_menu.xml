@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Registro">
+    tools:context=".MainMenu">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -17,7 +17,12 @@
         <Space
             android:layout_width="match_parent"
             android:layout_height="50dp" />
-
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            app:srcCompat="@drawable/imagen_x"
+            android:layout_marginStart="10dp"/>
 
         <ImageView
             android:id="@+id/imageView2"
@@ -31,55 +36,57 @@
 
 
 
-        <EditText
-            android:id="@+id/usuario"
-            android:layout_width="350dp"
-            android:background="@drawable/border"
-            android:padding="10dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Usuario"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"/>
-
-        <EditText
-            android:id="@+id/contrasena"
-            android:layout_width="350dp"
-            android:background="@drawable/border"
-            android:padding="10dp"
-            android:layout_height="50dp"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="Contraseña"
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-
-
-            />
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
         <Button
-            android:id="@+id/btn_ingresar"
-            android:layout_width="wrap_content"
+            android:id="@+id/btn_gestor_alarmas"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             app:cornerRadius="10dp"
             android:layout_gravity="center"
-            android:text="Ingresar" />
+            android:text="Gestor de alarmas"
+            android:backgroundTint="@color/rosado"
+            />
 
         <Space
             android:layout_width="match_parent"
             android:layout_height="25dp" />
 
         <Button
-            android:id="@+id/btn_registrarse"
+            android:id="@+id/btn_gestor_iot"
             app:cornerRadius="10dp"
-            android:layout_width="wrap_content"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Registrarse" />
+            android:backgroundTint="@color/naranja"
+            android:text="Gestor IoT" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+        <Button
+            android:id="@+id/btn_gestor_actividades"
+            app:cornerRadius="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/gris"
+            android:text="Gestor Actividades" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+
+        <Button
+            android:id="@+id/btn_gestor_audios"
+            app:cornerRadius="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@color/blanco"
+            android:text="Gestor Audios" />
+
 
         <Space
             android:layout_width="match_parent"
@@ -91,7 +98,9 @@
             android:layout_height="wrap_content"
             app:srcCompat="@drawable/footer" />
 
-    </LinearLayout>
 
+
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

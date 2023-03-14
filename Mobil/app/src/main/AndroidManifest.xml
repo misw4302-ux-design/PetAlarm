@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PetAlarmMobil"
         tools:targetApi="31">
         <activity
+            android:name=".MainAdminAlarm"
+            android:exported="false" />
+        <activity
             android:name=".MainMenu"
             android:exported="false" />
         <activity

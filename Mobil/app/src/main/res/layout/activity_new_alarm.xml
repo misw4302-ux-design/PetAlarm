@@ -41,7 +41,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/rosado"
                 android:clickable="true"
-                app:srcCompat="@mipmap/img_house_foreground"
+                app:srcCompat="@drawable/imagen_home"
                 app:tint="@color/white" />
         </LinearLayout>
 
@@ -177,18 +177,5 @@
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

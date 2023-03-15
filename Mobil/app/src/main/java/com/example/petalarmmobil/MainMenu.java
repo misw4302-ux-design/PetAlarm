@@ -18,4 +18,9 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, MainAdminAlarm.class);
         startActivity(intent);
     }
+
+    public void goHome(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
 }

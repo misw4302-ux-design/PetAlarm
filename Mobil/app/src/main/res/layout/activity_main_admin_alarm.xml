@@ -28,14 +28,18 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
+                android:onClick="goMenu"
+                android:clickable="true"
                 app:srcCompat="@drawable/imagen_x" />
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/btn_go_home"
                 android:layout_width="67dp"
                 android:layout_height="64dp"
                 android:layout_marginLeft="300dp"
                 android:backgroundTint="#DEF6F4"
+                android:onClick="goHome"
+                android:clickable="true"
                 app:srcCompat="@drawable/imagen_home" />
 
         </LinearLayout>

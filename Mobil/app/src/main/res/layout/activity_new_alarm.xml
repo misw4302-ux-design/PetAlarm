@@ -21,7 +21,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="51dp"
+            android:layout_height="60dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -30,19 +30,19 @@
                 android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
+                android:onClick="goAdminAlarm"
+                android:clickable="true"
                 app:srcCompat="@drawable/imagen_x" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton14"
-                android:layout_width="55dp"
-                android:layout_height="52dp"
-                android:layout_gravity="left"
+            <ImageButton
+                android:id="@+id/btn_go_home"
+                android:layout_width="67dp"
+                android:layout_height="64dp"
                 android:layout_marginLeft="300dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/rosado"
+                android:backgroundTint="#DEF6F4"
                 android:clickable="true"
-                app:srcCompat="@drawable/imagen_home"
-                app:tint="@color/white" />
+                android:onClick="goHome"
+                app:srcCompat="@drawable/imagen_home" />
         </LinearLayout>
 
 
@@ -174,6 +174,8 @@
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="goAdminAlarm"
+            android:clickable="true"
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>

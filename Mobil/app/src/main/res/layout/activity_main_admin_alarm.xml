@@ -213,6 +213,7 @@
             app:srcCompat="@android:drawable/ic_menu_add"
             android:layout_gravity="center"
             app:tint="@color/white"
+            android:onClick="crearAlarma"
             />
 
         <Space

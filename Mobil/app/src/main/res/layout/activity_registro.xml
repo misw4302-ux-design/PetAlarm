@@ -127,7 +127,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="REGISTRARSE" />
+            android:text="REGISTRARSE"
+            android:onClick="inicio"/>
 
         <Space
             android:layout_width="match_parent"
@@ -140,4 +141,4 @@
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>
-  </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

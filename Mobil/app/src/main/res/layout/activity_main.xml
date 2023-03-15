@@ -67,7 +67,8 @@
             android:layout_height="wrap_content"
             app:cornerRadius="10dp"
             android:layout_gravity="center"
-            android:text="Ingresar" />
+            android:text="Ingresar"
+            android:onClick="ingresar"/>
 
         <Space
             android:layout_width="match_parent"
@@ -79,7 +80,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Registrarse" />
+            android:text="Registrarse"
+            android:onClick="registrarse"/>
 
         <Space
             android:layout_width="match_parent"

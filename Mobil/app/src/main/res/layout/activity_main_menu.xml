@@ -44,7 +44,7 @@
             android:layout_gravity="center"
             android:text="Gestor de alarmas"
             android:backgroundTint="@color/rosado"
-            android:onClick="onClick"
+            android:onClick="gestorAlarma"
             />
 
         <Space

@@ -20,7 +20,7 @@ public class MainAdminAlarm extends AppCompatActivity {
     }
 
     public void goHome(View view){
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 

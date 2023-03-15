@@ -28,7 +28,7 @@
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:layout_marginStart="10dp"
-                android:onClick="goMenu"
+                android:onClick="goHome"
                 android:clickable="true"
                 app:srcCompat="@drawable/imagen_x" />
 
@@ -75,7 +75,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/textView2_"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="70dp"
@@ -89,7 +89,12 @@
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:thumbTint="@color/naranja"
+                android:trackTint="@color/gris"
+                android:checked="false"
+
+                />
 
         </LinearLayout>
 
@@ -133,6 +138,8 @@
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
+                android:thumbTint="@color/naranja"
+                android:trackTint="@color/gris"
                 android:layout_weight="1" />
 
         </LinearLayout>
@@ -179,12 +186,14 @@
                 android:layout_width="164dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
+                android:thumbTint="@color/naranja"
+                android:trackTint="@color/gris"
                 android:layout_weight="1" />
 
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/textView3_"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="70dp"

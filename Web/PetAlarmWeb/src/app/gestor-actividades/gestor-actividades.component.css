@@ -58,28 +58,32 @@ footer {
 }
 
 
-#item {
-  font-size: 20px;
-}
-input {
-  width:30px;
-  height:30px;
-  margin-left: 10px;
 
-  }
-  label {
-      font-size: 50px;
-    }
+
+#IText{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#id-text{
+  font-size: 20px;
+  font-weight: bold;
+}
 
 
 #title {
-font-size: 30px;
+font-size: 35px;
+padding-left: 200px;
+font-weight: bold;
+
 }
 
-img{
-width:300px;
-height:250;
-}
+/* img{
+width:50%;
+height:auto;
+
+margin-left: 200px;
+} */
 
 #agregar{
 padding: 5px 20px;
@@ -87,4 +91,38 @@ background-color: #292929;
 color: #E3E3E3;
 margin-left: 80px;
 
+}
+
+#radio{
+font-size: 15px;
+padding-left: 10px;
+}
+
+#iot{
+margin-left: 15px;
+}
+
+
+#checked {
+width:20px;
+height:20px;
+margin-left: 10px;
+
+}
+
+button {
+  width: 100px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #292929;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-left: 80px;
+}
+
+button:hover {
+  background-color: #676767;
 }

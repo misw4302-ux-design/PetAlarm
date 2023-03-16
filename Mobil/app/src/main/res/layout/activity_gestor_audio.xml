@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GestorAudio">
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="793dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btn_cerrar"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="10dp"
+                android:clickable="true"
+                android:onClick="goMenu"
+                app:srcCompat="@drawable/imagen_x" />
+
+            <ImageButton
+                android:id="@+id/btn_go_home"
+                android:layout_width="67dp"
+                android:layout_height="64dp"
+                android:layout_marginLeft="300dp"
+                android:backgroundTint="#DEF6F4"
+                android:clickable="true"
+                android:onClick="goMenu"
+                app:srcCompat="@drawable/imagen_home" />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AUDIO"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="420dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/logofinal_foreground" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="121dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Audio" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/naranja"
+                android:clickable="true"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="Actuales:"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Despierta!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="A Comer!!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="A Entrenarse!!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/naranja"
+            android:clickable="true"
+            android:onClick="goMenu"
+            app:srcCompat="@mipmap/img_ok_foreground"
+            app:tint="@color/white" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="match_parent"
+            android:layout_height="93dp"
+            app:srcCompat="@drawable/footer" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

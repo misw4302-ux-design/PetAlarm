@@ -14,7 +14,8 @@
         tools:layout_editor_absoluteY="1dp"
         tools:ignore="MissingConstraints">
 
-        <Space
+
+    <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
@@ -29,8 +30,8 @@
                 android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:onClick="goMenu"
                 android:clickable="true"
+                android:onClick="goMenu"
                 app:srcCompat="@drawable/imagen_x" />
 
             <ImageButton
@@ -43,7 +44,15 @@
                 android:onClick="goMenu"
                 app:srcCompat="@drawable/imagen_home" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ACTIVIDADES"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -67,19 +76,20 @@
                 android:layout_height="wrap_content"
                 android:hint="Actividad" />
         </com.google.android.material.textfield.TextInputLayout>
+
         <Space
             android:layout_width="match_parent"
             android:layout_height="30dp" />
 
         <TextView
             android:id="@+id/textView2"
-            android:textSize="18dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
+            android:text="Actuales:"
             android:textColor="@color/black"
-            android:textStyle="bold"
-            android:text="Actuales:" />
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
         <Space
             android:layout_width="match_parent"
@@ -104,15 +114,17 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/enrolar" />
+                app:srcCompat="@drawable/enrolar"
+                android:onClick="enrolar"/>
 
             <Switch
                 android:id="@+id/switch3"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
+                android:thumbTint="@color/naranja"
+                android:trackTint="@color/gris"
                 android:layout_weight="1" />
-
 
 
         </LinearLayout>
@@ -120,10 +132,10 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
             android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
             android:background="@color/black" />
 
         <LinearLayout
@@ -145,25 +157,29 @@
                 android:layout_width="120dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/enrolar" />
+                android:clickable="true"
+                app:srcCompat="@drawable/enrolar"
+                android:onClick="enrolar"/>
 
             <Switch
                 android:id="@+id/switch4"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="60dp"
+                android:thumbTint="@color/naranja"
+                android:trackTint="@color/gris"
                 android:layout_weight="1" />
 
 
-
         </LinearLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
             android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
             android:background="@color/black" />
 
 
@@ -171,21 +187,23 @@
             android:id="@+id/floatingActionButton12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_weight="1"
             android:backgroundTint="@color/naranja"
             android:clickable="true"
+            android:onClick="goMenu"
             app:srcCompat="@mipmap/img_ok_foreground"
-            android:layout_gravity="center"
-            app:tint = "@color/white"
-            android:onClick="goMenu"/>
+            app:tint="@color/white" />
 
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:clickable="true"
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>

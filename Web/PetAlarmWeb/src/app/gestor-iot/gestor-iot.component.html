@@ -1,0 +1,101 @@
+<div id="header">
+  <header>
+    <img class="topImage" img src="./assets/encabezadoa.png" alt="Imagen de encabezado - PetAlarm" data-toggle="tooltip"
+      title="Imagen encabezado - petAlarm" style="background-color: #DEF6F4;" />
+  </header>
+</div>
+<div id="content" style="background-color: #DEF6F4;">
+  <!--Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark  h6">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown" routerLink="/gestoralarmas">
+          <a class="nav-link" href="#" id="navAlarm" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">GESTOR ALARMAS</a>
+        </li>
+        <li class="nav-item dropdown" routerLink="/gestoriot">
+          <a class="nav-link" href="#" id="navIOT" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GESTOR IOT
+          </a>
+
+        </li>
+        <li class="nav-item dropdown" routerLink="/gestoractividades">
+          <a class="nav-link" href="#" id="navActiv" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            GESTOR ACTIVIDADES
+          </a>
+        </li>
+        <li class="nav-item dropdown" routerLink="/gestoraudios">
+          <a class="nav-link" href="#" id="navAudios" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">GESTOR AUDIOS</a>
+        </li>
+      </ul>
+
+
+    </div>
+
+
+  </nav>
+
+  <!-- Main Router Outlet -->
+  <div style="display: inline-block; width: 40%; padding-top: 60px; padding-left: 80px; ">
+    <p id="title">Gestor IOT</p><br>
+
+
+    <label id="IText">Dispositivo</label> <input type="text" id="iot">
+
+    <hr width="450px">
+    <br>
+    <label id="IText">Actuales:</label> <br><br>
+
+<form>
+    <label id="radio">Vertedero de alimento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio"
+      id="checked" name="itemiot">
+
+    <hr width="250px">
+
+    <label id="radio">Vertedero de
+      agua&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio"
+      id="checked" name="itemiot">
+
+    <hr width="250px">
+
+    <label id="radio">Cámara
+      Jardín&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input
+      type="radio" id="checked" name="itemiot">
+
+    <hr width="250px">
+    <label id="radio">Vertedero de
+      agua&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="radio"
+      id="checked" name="itemiot">
+
+    </form>
+    <br><br>
+    <Button id="agregar" routerLink="/gestoralarmas">Agregar</Button>
+
+  </div>
+
+
+  <div style="display: inline-block; ">
+
+
+
+    <img src="./assets/Cachorro2.PNG" alt="">
+
+
+  </div>
+</div>
+
+
+
+<!-- Footer -->
+
+
+<div>
+  <img class="topImage" img src="./assets/footer.png" data-toggle="tooltip" title="Imagen footer" />
+
+</div>

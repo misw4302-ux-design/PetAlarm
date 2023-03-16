@@ -19,4 +19,9 @@ public class GestorActiv extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void enrolar(View view) {
+        Intent intent = new Intent(this, IotAdmin.class);
+        startActivity(intent);
+    }
+
 }

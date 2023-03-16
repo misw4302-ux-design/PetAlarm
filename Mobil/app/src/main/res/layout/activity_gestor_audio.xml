@@ -16,7 +16,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,15 @@
                 android:onClick="goMenu"
                 app:srcCompat="@drawable/imagen_home" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="AUDIO"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -101,7 +109,7 @@
 
         <Space
             android:layout_width="match_parent"
-            android:layout_height="20dp" />
+            android:layout_height="10dp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -126,9 +134,9 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="5dp"
             android:background="@color/black" />
 
         <LinearLayout
@@ -154,9 +162,9 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="5dp"
             android:background="@color/black" />
 
         <LinearLayout
@@ -182,9 +190,9 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="5dp"
             android:layout_marginRight="50dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="5dp"
             android:background="@color/black" />
 
         <Space

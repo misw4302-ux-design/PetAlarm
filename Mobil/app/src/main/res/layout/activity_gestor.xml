@@ -44,7 +44,15 @@
                 android:onClick="goMenu"
                 app:srcCompat="@drawable/imagen_home" />
         </LinearLayout>
-
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ACTIVIDADES"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
 
         <ImageView
             android:id="@+id/imageView2"

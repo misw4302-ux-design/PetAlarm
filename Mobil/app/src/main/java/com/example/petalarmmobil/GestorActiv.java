@@ -6,22 +6,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainAdminAlarm extends AppCompatActivity {
+public class GestorActiv extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_admin_alarm);
-    }
-
-    public void crearAlarma(View view){
-        Intent intent = new Intent(this, new_alarm.class);
-        startActivity(intent);
-    }
-
-    public void goHome(View view){
-        Intent intent = new Intent(this, MainMenu.class);
-        startActivity(intent);
+        setContentView(R.layout.activity_gestor);
     }
 
     public void goMenu(View view){

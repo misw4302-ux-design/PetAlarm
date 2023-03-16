@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".new_alarm">
-
+    tools:context=".IotAdmin">
 
     <LinearLayout
         android:layout_width="409dp"
@@ -30,7 +29,7 @@
                 android:layout_height="25dp"
                 android:layout_gravity="center"
                 android:layout_marginStart="10dp"
-                android:onClick="goAdminAlarm"
+                android:onClick="goHome"
                 android:clickable="true"
                 app:srcCompat="@drawable/imagen_x" />
 
@@ -51,7 +50,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="ALARMA"
+            android:text="DISPOSITIVO IOT"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -63,11 +62,26 @@
             app:srcCompat="@mipmap/logofinal_foreground" />
 
 
-        <ImageView
-            android:id="@+id/imageView4"
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="304dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditText"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="DETECTAR IOT"
+                app:cornerRadius="90dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Space
             android:layout_width="match_parent"
-            android:layout_height="176dp"
-            app:srcCompat="@mipmap/img_time_picker_foreground" />
+            android:layout_height="20dp" />
 
         <TextView
             android:id="@+id/textView2"
@@ -76,66 +90,33 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="50dp"
             android:textStyle="bold"
-            android:text="Actividades:" />
+            android:text="Actuales:" />
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="5dp" />
+            android:layout_height="47dp"
+            android:orientation="horizontal">
 
-        <Switch
-            android:id="@+id/switch1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:thumbTint="@color/naranja"
-            android:trackTint="@color/gris"
-            android:text="Tono despertar" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Vertedero de alimento" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="31dp"
+                android:thumbTint="@color/naranja"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
 
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@color/black" />
-
-
-        <Switch
-            android:id="@+id/switch2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:thumbTint="@color/naranja"
-            android:trackTint="@color/gris"
-            android:text="Alimentar cachorro" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:background="@color/black" />
-
-        <Switch
-            android:id="@+id/switch3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:thumbTint="@color/naranja"
-            android:trackTint="@color/gris"
-            android:text="Vertedero de agua" />
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
             android:layout_marginLeft="50dp"
             android:layout_marginRight="50dp"
             android:background="@color/black" />
@@ -143,60 +124,125 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
+            android:layout_height="47dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton10"
-                android:layout_width="wrap_content"
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="283dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginRight="30dp"
-                android:layout_marginTop="30dp"
-                android:layout_weight="1"
-                android:backgroundTint="@color/naranja"
-                android:clickable="true"
-                android:onClick="goAdminAlarm"
-                app:rippleColor="#2DFFFFFF"
-                app:tint = "@color/white"
-                app:srcCompat="@android:drawable/ic_menu_add" />
+                android:text="Vertedero de agua" />
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton11"
-                android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/radioButton11"
+                android:layout_width="31dp"
+                android:thumbTint="@color/naranja"
+
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/black" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="283dp"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="60dp"
-                android:layout_marginTop="30dp"
-                android:layout_weight="1"
-                android:clickable="true"
-                android:backgroundTint="@color/naranja"
-                app:tint = "@color/white"
-                android:src="@android:drawable/ic_btn_speak_now" />
+                android:layout_marginLeft="50dp"
+                android:text="Cámara de jardín" />
+
+            <RadioButton
+                android:id="@+id/radioButton12"
+                android:layout_width="31dp"
+                android:thumbTint="@color/naranja"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/black" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Juguete IOT de sala" />
+
+            <RadioButton
+                android:id="@+id/radioButton13"
+                android:layout_width="31dp"
+                android:thumbTint="@color/naranja"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="vertical">
 
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:id="@+id/floatingActionButton12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:backgroundTint="@color/naranja"
                 android:clickable="true"
-                android:onClick="goAdminAlarm"
-
+                android:onClick="goHome"
                 app:srcCompat="@mipmap/img_ok_foreground"
-                app:tint = "@color/white"
-                />
+                app:tint="@color/white" />
         </LinearLayout>
+
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="goAdminAlarm"
-            android:clickable="true"
+
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

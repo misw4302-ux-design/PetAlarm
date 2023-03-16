@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/naranja"
+            android:onClick="gestorIOT"
             android:text="Gestor IoT" />
 
         <Space
@@ -73,7 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/gris"
-            android:text="Gestor Actividades" />
+            android:text="Gestor Actividades"
+            android:onClick="gestorActividad"/>
 
         <Space
             android:layout_width="match_parent"

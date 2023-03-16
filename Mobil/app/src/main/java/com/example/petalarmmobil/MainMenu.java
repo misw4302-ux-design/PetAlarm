@@ -34,4 +34,9 @@ public class MainMenu extends AppCompatActivity {
         Intent intent = new Intent(this, IotAdmin.class);
         startActivity(intent);
     }
+
+    public void gestorAudios(View view) {
+        Intent intent = new Intent(this, GestorAudio.class);
+        startActivity(intent);
+    }
 }

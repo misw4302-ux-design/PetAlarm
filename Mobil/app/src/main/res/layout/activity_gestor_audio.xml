@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GestorActiv">
+    tools:context=".GestorAudio">
 
     <LinearLayout
-        android:layout_width="409dp"
-        android:layout_height="729dp"
+        android:layout_width="410dp"
+        android:layout_height="793dp"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp"
-        tools:ignore="MissingConstraints">
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="5dp">
 
-
-    <Space
+        <Space
             android:layout_width="match_parent"
             android:layout_height="20dp" />
 
@@ -48,30 +47,47 @@
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="match_parent"
+            android:layout_width="420dp"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/logofinal_foreground" />
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="32dp"
-            app:endIconMode="custom">
+            android:layout_height="121dp"
+            android:orientation="horizontal">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/textInputEditText"
-                android:layout_width="match_parent"
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="42dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="10dp"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Audio" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton11"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:hint="Actividad" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/naranja"
+                android:clickable="true"
+                android:src="@android:drawable/ic_btn_speak_now"
+                app:tint="@color/white" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="30dp" />
+        </LinearLayout>
+
 
         <TextView
             android:id="@+id/textView2"
@@ -85,98 +101,103 @@
 
         <Space
             android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Despierta!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton10"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="A Comer!!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="283dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="A Entrenarse!!!" />
+
+            <RadioButton
+                android:id="@+id/radioButton7"
+                android:layout_width="31dp"
+                android:layout_height="wrap_content"
+                android:thumbTint="@color/naranja" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/black" />
+
+        <Space
+            android:layout_width="match_parent"
             android:layout_height="5dp" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView8"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="Abrir puerta antejardín"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/enrolar"
-                android:onClick="enrolar"/>
-
-            <Switch
-                android:id="@+id/switch3"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="60dp"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="8dp"
-            android:background="@color/black" />
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="50dp"
-                android:text="Cerrar puerta antejardin"
-                android:textColor="@color/black"
-                android:textSize="14sp" />
-
-            <ImageView
-                android:id="@+id/imageView9"
-                android:layout_width="120dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:clickable="true"
-                app:srcCompat="@drawable/enrolar"
-                android:onClick="enrolar"/>
-
-            <Switch
-                android:id="@+id/switch4"
-                android:layout_width="120dp"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="60dp"
-                android:layout_weight="1" />
-
-
-        </LinearLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginRight="50dp"
-            android:layout_marginBottom="8dp"
-            android:background="@color/black" />
 
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/floatingActionButton12"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_gravity="center"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="40dp"
             android:layout_weight="1"
             android:backgroundTint="@color/naranja"
             android:clickable="true"
@@ -184,14 +205,11 @@
             app:srcCompat="@mipmap/img_ok_foreground"
             app:tint="@color/white" />
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="126dp" />
 
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="match_parent"
-            android:layout_height="92dp"
+            android:layout_height="93dp"
             app:srcCompat="@drawable/footer" />
 
     </LinearLayout>

@@ -24,8 +24,14 @@ public class MainMenu extends AppCompatActivity {
         startActivity(intent);
     }
 
+
     public void gestorActividad(View view) {
         Intent intent = new Intent(this, GestorActiv.class);
+        startActivity(intent);
+    }
+
+    public void gestorIOT(View view){
+        Intent intent = new Intent(this, IotAdmin.class);
         startActivity(intent);
     }
 }

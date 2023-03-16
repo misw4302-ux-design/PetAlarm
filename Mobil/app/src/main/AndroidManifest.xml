@@ -15,6 +15,9 @@
             android:name=".GestorActiv"
             android:exported="false" />
         <activity
+            android:name=".IotAdmin"
+            android:exported="false" />
+        <activity
             android:name=".new_alarm"
             android:exported="false" />
         <activity

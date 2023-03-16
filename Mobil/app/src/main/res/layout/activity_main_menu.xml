@@ -60,6 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:backgroundTint="@color/naranja"
+            android:onClick="gestorIOT"
             android:text="Gestor IoT" />
 
         <Space

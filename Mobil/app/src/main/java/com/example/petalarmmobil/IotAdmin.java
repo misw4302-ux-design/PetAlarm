@@ -6,27 +6,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class MainAdminAlarm extends AppCompatActivity {
+public class IotAdmin extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_admin_alarm);
+        setContentView(R.layout.activity_iot_admin);
     }
 
-    public void crearAlarma(View view){
-        Intent intent = new Intent(this, new_alarm.class);
-        startActivity(intent);
-    }
 
     public void goHome(View view){
         Intent intent = new Intent(this, MainMenu.class);
         startActivity(intent);
     }
 
-    public void goMenu(View view){
-        Intent intent = new Intent(this, MainMenu.class);
+
+    public void goAdminAlarm(View view){
+        Intent intent = new Intent(this, MainAdminAlarm.class);
         startActivity(intent);
     }
-
 }

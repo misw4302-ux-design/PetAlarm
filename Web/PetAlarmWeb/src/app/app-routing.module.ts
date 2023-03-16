@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GestorActividadesComponent } from './gestor-actividades/gestor-actividades.component';
+import { CrearAlarmaComponent } from './crear-alarma/crear-alarma.component';
 import { GestorAlarmasComponent } from './gestor-alarmas/gestor-alarmas.component';
 import { GestorAudioComponent } from './gestor-audio/gestor-audio.component';
 import { GestorIotComponent } from './gestor-iot/gestor-iot.component';
@@ -32,6 +33,12 @@ const routes: Routes = [
   {
     path: 'gestoraudios',
     component: GestorAudioComponent,
+
+  },
+
+  {
+    path: 'crearalarma',
+    component: CrearAlarmaComponent,
 
   },
 

@@ -58,8 +58,8 @@
   }
   
 
-  label {
-    font-size: 50px;
+  #item {
+    font-size: 20px;
   }
   input {
     width:30px;
@@ -67,16 +67,18 @@
     margin-left: 10px;
 
     }
-
+    label {
+        font-size: 50px;
+      }
 
 
 #title {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 img{
-  width:400px;
-  height:400px;
+  width:300px;
+  height:250;
 }
 
 #agregar{
@@ -86,5 +88,3 @@ img{
   margin-left: 80px;
 
 }
-
-

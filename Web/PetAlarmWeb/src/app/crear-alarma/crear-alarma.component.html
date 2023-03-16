@@ -14,7 +14,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
+      
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown" >
             <a  class="nav-link"  href="#" id="navAlarm" role="button" data-bs-toggle="dropdown" aria-expanded="false">GESTOR ALARMAS</a>
@@ -24,65 +24,90 @@
             aria-expanded="false">
             GESTOR IOT
           </a>
-
+  
         </li>
         <li class="nav-item dropdown">
           <a  class="nav-link" href="#" id="navActiv" role="button" data-bs-toggle="dropdown"
             aria-expanded="false">
             GESTOR ACTIVIDADES
           </a>
-
-
+  
+  
         </li>
         <li class="nav-item dropdown">
           <a  class="nav-link" href="#" id="navAudios" role="button" data-bs-toggle="dropdown" aria-expanded="false">GESTOR AUDIOS</a>
-
+  
       </li>
       </ul>
-
-
+  
+  
   </div>
-
-
+  
+  
   </nav>
-
-
-
-
-
-
+  
+  
+  
+  
+  
     <!-- Main Router Outlet -->
     <div style="display: inline-block; width: 40%; padding-top: 60px; padding-left: 80px; ">
-
+        
               <label>5:00 AM</label><input type="checkbox" id="checked" >
               <h3>Domingo a Domingo</h3>
-              <hr width="250px">
+              <hr width="250px"> 
 
               <label>7:30 AM</label><input type="checkbox" id="checked">
               <h3>Lunes, miércoles y viernes</h3>
-              <hr width="250px">
+              <hr width="250px"> 
 
               <label>8:30 AM</label><input type="checkbox" id="checked" >
               <h3>Sábado</h3>
-              <hr width="250px">
+              <hr width="250px"> 
 
               <Button id="agregar">Agregar</Button>
+     
+    </div>
+
+
+    <div style="display: inline-block; width: 30%; padding-left: 80px; ">
+        
+        <p id="title">Programacion de alarma</p>
+        <img src="../../assets/TimePickerWeb.PNG" alt=""><br>
+        <Button id="agregar">Aceptar</Button>
+
 
     </div>
 
 
-    <div style="display: inline-block; ">
+    <div style="display: inline-block; width: 30%; padding-left: 80px; ">
+        
+        <p id="title">Actividades de alarma</p>
+
+        <label id="item">Tono despertar&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="checkbox" id="checked" >
+        <hr width="250px"> 
+
+        <label id="item">Alimentar Cachorro&nbsp; </label><input type="checkbox" id="checked">
+        <hr width="250px"> 
+
+        <label id="item">Vertedero de agua&nbsp;&nbsp;&nbsp;  </label><input type="checkbox" id="checked" >
+        <hr width="250px"> 
+
+        <Button id="agregar">Cancelar</Button>
 
 
 
-    <img src="../../assets/cachorro.PNG" alt="">
-
-
-      </div>
     </div>
 
 
 
+
+
+
+    </div>
+
+
+  
     <!-- Footer -->
 
 
@@ -90,8 +115,8 @@
       <img class="topImage" img src="./assets/footer.png"
        data-toggle="tooltip"
       title="Imagen footer"/>
-
+  
     </footer>
 
-
-
+  
+  

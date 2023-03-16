@@ -1,14 +1,12 @@
 <div id="header">
-    <header>
-      <img class="topImage" img src="./assets/encabezadoa.png"
-        alt="Imagen de encabezado - PetAlarm" data-toggle="tooltip"
-        title="Imagen encabezado - petAlarm"
-        style="background-color: #DEF6F4;" />
-    </header>
-  </div>
-  <div id="content" style="background-color: #DEF6F4;">
-   <!--Menu -->
-   <nav class="navbar navbar-expand-lg navbar-dark  h6">
+  <header>
+    <img class="topImage" img src="./assets/encabezadoa.png" alt="Imagen de encabezado - PetAlarm" data-toggle="tooltip"
+      title="Imagen encabezado - petAlarm" style="background-color: #DEF6F4;" />
+  </header>
+</div>
+<div id="content" style="background-color: #DEF6F4;">
+  <!--Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark  h6">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,82 +14,65 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item dropdown" >
-            <a  class="nav-link"  href="#" id="navAlarm" role="button" data-bs-toggle="dropdown" aria-expanded="false">GESTOR ALARMAS</a>
+        <li class="nav-item dropdown" routerLink="/gestoralarmas">
+          <a class="nav-link" href="#" id="navAlarm" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">GESTOR ALARMAS</a>
         </li>
-        <li class="nav-item dropdown">
-          <a  class="nav-link" href="#" id="navIOT" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+        <li class="nav-item dropdown" routerLink="/gestoriot">
+          <a class="nav-link" href="#" id="navIOT" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             GESTOR IOT
           </a>
 
         </li>
-        <li class="nav-item dropdown">
-          <a  class="nav-link" href="#" id="navActiv" role="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+        <li class="nav-item dropdown" routerLink="/gestoractividades">
+          <a class="nav-link" href="#" id="navActiv" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             GESTOR ACTIVIDADES
           </a>
-
-
         </li>
-        <li class="nav-item dropdown">
-          <a  class="nav-link" href="#" id="navAudios" role="button" data-bs-toggle="dropdown" aria-expanded="false">GESTOR AUDIOS</a>
-
-      </li>
+        <li class="nav-item dropdown" routerLink="/gestoraudios">
+          <a class="nav-link" href="#" id="navAudios" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">GESTOR AUDIOS</a>
+        </li>
       </ul>
+    </div>
+  </nav>
 
+  <!-- Main Router Outlet -->
+  <div style="display: inline-block; width: 40%; padding-top: 60px; padding-left: 80px; ">
+
+    <label>5:00 AM</label><input type="checkbox" id="checked">
+    <h3>Domingo a Domingo</h3>
+    <hr width="250px">
+
+    <label>7:30 AM</label><input type="checkbox" id="checked">
+    <h3>Lunes, miércoles y viernes</h3>
+    <hr width="250px">
+
+    <label>8:30 AM</label><input type="checkbox" id="checked">
+    <h3>Sábado</h3>
+    <hr width="250px">
+
+    <Button id="agregar" routerLink="/crearalarma">Agregar</Button>
 
   </div>
 
 
-  </nav>
-
-
-
-
-
-
-    <!-- Main Router Outlet -->
-    <div style="display: inline-block; width: 40%; padding-top: 60px; padding-left: 80px; ">
-
-              <label>5:00 AM</label><input type="checkbox" id="checked" >
-              <h3>Domingo a Domingo</h3>
-              <hr width="250px">
-
-              <label>7:30 AM</label><input type="checkbox" id="checked">
-              <h3>Lunes, miércoles y viernes</h3>
-              <hr width="250px">
-
-              <label>8:30 AM</label><input type="checkbox" id="checked" >
-              <h3>Sábado</h3>
-              <hr width="250px">
-
-              <Button id="agregar">Agregar</Button>
-
-    </div>
-
-
-    <div style="display: inline-block; ">
+  <div style="display: inline-block; ">
 
 
 
     <img src="../../assets/cachorro.PNG" alt="">
 
 
-      </div>
-    </div>
+  </div>
+</div>
 
 
 
-    <!-- Footer -->
+<!-- Footer -->
 
 
-    <footer>
-      <img class="topImage" img src="./assets/footer.png"
-       data-toggle="tooltip"
-      title="Imagen footer"/>
+<footer>
+  <img class="topImage" img src="./assets/footer.png" data-toggle="tooltip" title="Imagen footer" />
 
-    </footer>
-
-
-
+</footer>

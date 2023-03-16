@@ -9,17 +9,19 @@ import { GestorAlarmasComponent } from './gestor-alarmas/gestor-alarmas.componen
 import { GestorIotComponent } from './gestor-iot/gestor-iot.component';
 import { GestorActividadesComponent } from './gestor-actividades/gestor-actividades.component';
 import { GestorAudioComponent } from './gestor-audio/gestor-audio.component';
+import { CrearAlarmaComponent } from './crear-alarma/crear-alarma.component';
 
 
 
 @NgModule({
-  declarations: [			
+  declarations: [
     AppComponent,
     LoginComponent,
     GestorAlarmasComponent,
       GestorIotComponent,
       GestorActividadesComponent,
-      GestorAudioComponent
+      GestorAudioComponent,
+      CrearAlarmaComponent
    ],
   imports: [
     BrowserModule,

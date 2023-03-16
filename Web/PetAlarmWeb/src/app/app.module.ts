@@ -6,15 +6,20 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './login/login.component';
 import { GestorAlarmasComponent } from './gestor-alarmas/gestor-alarmas.component';
+import { GestorIotComponent } from './gestor-iot/gestor-iot.component';
+import { GestorActividadesComponent } from './gestor-actividades/gestor-actividades.component';
+import { GestorAudioComponent } from './gestor-audio/gestor-audio.component';
 
 
 
 @NgModule({
-  declarations: [
+  declarations: [			
     AppComponent,
     LoginComponent,
     GestorAlarmasComponent,
-
+      GestorIotComponent,
+      GestorActividadesComponent,
+      GestorAudioComponent
    ],
   imports: [
     BrowserModule,

@@ -14,7 +14,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
+
       <ul class="navbar-nav mr-auto">
         <li class="nav-item dropdown" >
             <a  class="nav-link"  href="#" id="navAlarm" role="button" data-bs-toggle="dropdown" aria-expanded="false">HOME</a>
@@ -22,36 +22,47 @@
 
 
       </ul>
-  
-  
+
+
   </div>
-  
-  
+
+
   </nav>
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
     <!-- Main Router Outlet -->
     <div class="container-fluid" id="principal">
-      <div class="row">
+
         <div class="col-md-12">
-          <div>
-            <router-outlet></router-outlet>
+          <div class="login" >
+          
+            <h1>Inicio de sesión</h1>
+
+              <div class="form-row">
+                <label for="username">Usuario</label>
+                <input type="text" id="username" name="username">
+              </div>
+              <div class="form-row">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password">
+              </div>
+              <button type="submit"  routerLink="/gestoralarmas">INGRESAR</button>
+
           </div>
-        </div>
+
       </div>
     </div>
   </div>
-  
+
     <!-- Footer -->
     <footer>
       <img class="topImage" img src="./assets/footer.png"
        data-toggle="tooltip"
       title="Imagen footer"/>
-  
+
     </footer>
-  
-  
+
